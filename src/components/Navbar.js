@@ -21,10 +21,10 @@ const Navbar = () => {
           <Link to='/' className='home'>
             <li>Home</li>
           </Link>
-          <Link to='/register' className='account'>
+          <Link to= {AccountStatus? '/profile' : '/register'} className='account'>
             <li>Account</li>
           </Link>
-          <Link to='/chat' className='skills'>
+          <Link to= {AccountStatus? '/chat' : '/noaccount'} className='chatroom'>
             <li>Chat</li>
           </Link>
           <Link to='/contact' className='home'>
@@ -34,7 +34,7 @@ const Navbar = () => {
         {/* 
         whenever we click on button = setMobile(!Mobile) ==  is mobile oppsite to setMobile 
         */}
-        <button className='mobile-menu-icon' onClick={() => setMobile(!Mobile)}>
+        <button className='' onClick={() => setMobile(!Mobile)}>
           {Mobile ? <ImCross /> : <FaBars />}
         </button>
       </nav>

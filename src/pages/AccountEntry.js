@@ -11,7 +11,10 @@ export default function () {
   let [authMode, setAuthMode] = useState("signin")
 
   const changeAuthMode = () => {
-    setAuthMode(authMode === "signin" ? "signup" : "signin")
+    if(authMode === "signin")
+        setAuthMode("signup");
+    else
+        setAuthMode("signin");
   }
 
   if (authMode === "signin") {

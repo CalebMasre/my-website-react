@@ -4,6 +4,8 @@ import Home from "./pages/Home";
 import Contact from "./pages/Contact";
 import Chatroom from "./pages/Chatroom";
 import AccountEntry from "./pages/AccountEntry";
+import Error from "./pages/Error";
+import Profile from "./pages/Profile";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom"
 
 
@@ -26,6 +28,13 @@ function App() {
           <Route path='/contact' component={Contact} exact>
             <Contact />
           </Route>
+          <Route path="/noaccount" component = {Error} exact>
+            <Error/>
+          </Route>
+          <Route path = "/profile" component = {Profile} exact>
+            <Profile/>
+          </Route>
+          
           
         </Switch>
       </Router>
