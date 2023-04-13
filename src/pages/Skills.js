@@ -1,12 +1,13 @@
 import React from "react"
 
-const Skills = () => {
+const Account = () => {
   return (
     <>
       <section className='hero'>
-        <h1> Skills</h1>
+        <h1> Account Information</h1>
+        
       </section>
     </>
   )
 }
-export default Skills
+export default Account;

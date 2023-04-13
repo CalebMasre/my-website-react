@@ -6,7 +6,8 @@ import { ImCross } from "react-icons/im"
 import Image from "./../images/graduation.jpg"
 
 const Navbar = () => {
-  const [Mobile, setMobile] = useState(false)
+  const [Mobile, setMobile] = useState(false);
+  const [AccountStatus, setAccountStatus] = useState(false);
   return (
     <>
       <nav className='navbar'>
@@ -20,8 +21,8 @@ const Navbar = () => {
           <Link to='/' className='home'>
             <li>Home</li>
           </Link>
-          <Link to='/skills' className='about'>
-            <li>Skills</li>
+          <Link to='/register' className='account'>
+            <li>Account</li>
           </Link>
           <Link to='/chat' className='skills'>
             <li>Chat</li>
